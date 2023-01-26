@@ -84,7 +84,7 @@ function doSeqThing() {
         }
         note_length = -1;
         
-        let rest_probability = (getRandomInt(3) > 2);
+        let rest_probability = (getRandomInt(100) > 99);
 
         if ( !rest_probability ) {
             note_length = MIN_NOTE_LENGTH_IN_MS*randPow2(MAX_NOTELEN);
@@ -117,7 +117,7 @@ function sendMidiCC7(ccNum,value) { // value is a 7bit number
 function randPow2(max) {
     var value = getRandomInt(max);
     if ( value % 2) {
-        if ( getRandomInt(100) >=50 ) {
+        if ( getRandomInt(100) >=90 ) {
             value++;
         }
         else {
@@ -132,7 +132,7 @@ function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
                     //W, H, W, W, H, W
-const MINOR_SCALE = [ 1, 2, 4, 6, 7 ,9 ];
+const MINOR_SCALE = [ 1, 3, 5, 7, 12 ];
 
 const ONE_OCTAVE = 12;
 
