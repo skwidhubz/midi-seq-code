@@ -1,1 +1,1 @@
-# midi-seq-code
+# MIDI Sequencer in JavaScript
