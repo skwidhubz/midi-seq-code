@@ -13,8 +13,8 @@ function consoleDom(){
 }
 
 
-startButton.addEventListener("click", console.log("stop seq"));
-stopButton.addEventListener("click",console.log("stop seq"));
+startButton.addEventListener("click", console.log("stop seq")); // start seq
+stopButton.addEventListener("click",console.log("stop seq")); // stop seq
 
 
 
@@ -75,7 +75,7 @@ var midi_channel = 4;
 var note_length = -1;
 var note_playing = 0;
 
-function doSeqThing() {
+function doSeqThing() { // main seq function
     console.log("note-length "+note_length);
     if ( note_length <= 0 ) {
         if ( note_length == 0) {

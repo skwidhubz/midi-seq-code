@@ -1,4 +1,4 @@
-// pseudo server
+// pseudo server for live server
 
 const http = require('http');
 const url = require('url');
